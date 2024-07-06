@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excursii cu Barca în Delta Dunării</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Excursii cu Barca în Delta Dunării</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Acasă</a></li>
+                <li><a href="#about">Despre Noi</a></li>
+                <li><a href="#tours">Excursii</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#booking">Rezervări</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Bun Venit în Delta Dunării!</h2>
+        <p>Descoperă frumusețea Deltei Dunării cu excursiile noastre ghidate.</p>
+        <img src="images/delta.jpg" alt="Delta Dunării">
+    </section>
+    <section id="about">
+        <h2>Despre Noi</h2>
+        <p>Suntem o echipă de ghizi locali pasionați de natură și aventură.</p>
+    </section>
+    <section id="tours">
+        <h2>Excursii</h2>
+        <ul>
+            <li><strong>Turul Aventura</strong> - Durată: 3 ore - Preț: 100 RON</li>
+            <li><strong>Turul Relaxare</strong> - Durată: 5 ore - Preț: 150 RON</li>
+            <!-- Adaugă mai multe excursii aici -->
+        </ul>
+    </section>
+    <section id="gallery">
+        <h2>Galerie</h2>
+        <img src="images/tour1.jpg" alt="Turul Aventura">
+        <img src="images/tour2.jpg" alt="Turul Relaxare">
+    </section>
+    <section id="booking">
+        <h2>Rezervări</h2>
+        <form action="submit_booking.php" method="post">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="tour">Excursie:</label>
+            <select id="tour" name="tour">
+                <option value="aventura">Turul Aventura</option>
+                <option value="relaxare">Turul Relaxare</option>
+                <!-- Adaugă mai multe opțiuni de excursii aici -->
+            </select>
+            <button type="submit">Rezervă acum</button>
+        </form>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Telefon: 123-456-789</p>
+        <p>Email: contact@excursiidelta.ro</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Excursii cu Barca în Delta Dunării</p>
+    </footer>
+</body>
+</html>
